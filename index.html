@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        document.write("<h2> Practice of array </h2>")
+        var fruits = ["Apple", "Banana", "Kiwi", "Mango"]
+        document.write("Array values: ", fruits, "<br><br>")
+        document.write("Length of array: ", fruits.length, "<br><br>")
+        document.write("join array: ", fruits.join(" and "), "<br><br>")
+        document.write("Type of array: ", fruits, typeof fruits, "<br><br>")
+        document.write("Array in string: ", fruits.toString(), "<br><br>")
+        fruits.pop()
+        document.write("Array after using pop: ", fruits, "<br> <br>")
+        fruits.push("Grapes")
+        document.write("Array after using push: ", fruits, "<br> <br>")
+
+        document.write("<h2> Qno 1 in console </h2>")
+        var StudentsName = [];
+        console.log(StudentsName)
+
+        document.write("<h2> Qno 2 in console </h2>")
+        var FutureStudent = { length: 0 }
+        console.log(FutureStudent)
+
+        document.write("<h2> Qno3 </h2> ")
+        var AnimalsName = ["Camel", "Panda", "Goblin shark", "Kangaroo", "Liger"]
+        document.write("<p> Array in string: ", AnimalsName, "</p>")
+
+        document.write("<h2> Qno 4 </h2>")
+        var Numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+        document.write("<p> Array in number: ", Numbers, "</p>")
+
+        document.write("<h2> Qno 5 </h2>")
+        var Boolean = [true, false, true, false]
+        document.write("<p> Array Boolean: ", Boolean, "</p>")
+
+        document.write("<h2> Qno6 </h2>")
+        var MixedArray = ["Apple", 6, 7, true, false, { Name: "jhon", Gender: "male" }]
+        document.write("<p> Mixed Array: ", MixedArray, "</p>")
+        document.write("<p> Mixed array 0: ", MixedArray[0], "</P>")
+        document.write("<p> Mixed array 1: ", MixedArray[1], "</P>")
+        document.write("<p> Mixed array 2: ", MixedArray[2], "</P>")
+        document.write("<p> Mixed array 3: ", MixedArray[3], "</P>")
+        document.write("<p> Mixed array 4: ", MixedArray[4], "</P>")
+        document.write("<p> Mixed array 5: ", MixedArray[5], "</P>")
+
+        document.write("<h2> Qno 7</h2>")
+        var List = ["SSC", "HSC", "BCS", "BS", "BCOM", "MS", "M.PHIL.", "PHD"]
+        document.write("<p> 1:", List[0], "</p>")
+        document.write("<p> 2:", List[1], "</p>")
+        document.write("<p> 3:", List[2], "</p>")
+        document.write("<p> 4:", List[3], "</p>")
+        document.write("<p> 5:", List[4], "</p>")
+        document.write("<p> 6:", List[5], "</p>")
+
+        document.write("<h2> Qno 8 </h2>")
+        var Names = ["Micheal", "jhon", "Tony"];
+        var Scores = [320, 230, 480];
+        var TotalMarks = 500;
+        var Parcentage1 = (Scores[0] / TotalMarks) * 100;
+        var Parcentage2 = (Scores[1] / TotalMarks) * 100;
+        var Parcentage3 = (Scores[2] / TotalMarks) * 100;
+        document.write("<p> Score of ", Names[0], "is ", Scores[0], ". ", "Percentage is ", Parcentage1, "%", "</p>")
+        document.write("<p> Score of ", Names[1], "is ", Scores[1], ". ", "Percenatge is ", Parcentage2, "%", "</p>")
+        document.write("<p> Score of ", Names[2], "is ", Scores[2], ". ", "Percentage is ", Parcentage3, "%", "</p>")
+
+        document.write("<h2> Qno 9</h2>")
+        var Colors = ["Plum", "Navy", "Royal pink"]
+        document.write("<p> Original Array is: ", Colors.join(","), ".", "</p>")
+        var addBeginning = prompt("Enter the color u want to add to the begining")
+        Colors.unshift(addBeginning)
+        document.write("<p> After adding color to the begining: ", Colors.join(","), "</p>")
+        var addEnd = prompt("Enter the color u want to add to the end")
+        Colors.push(addEnd)
+        document.write("<p> After adding color to the end: ", Colors.join(","), ".", "</p>")
+        Colors.unshift("Maroon", "Coral")
+        document.write("<p> After adding two more color to the begining: ", Colors.join(","), ".", "</p>")
+        Colors.shift()
+        document.write("<p> After deleting the first color: ", Colors.join(","), ".", "</p>")
+        Colors.pop()
+        document.write("<p> After deleting the last color: ", Colors.join(","), ".", "</p>")
+        var IndexToAdd = prompt("Enter the index where u want to add color");
+        var ColorName = prompt("Enter the color u want to add");
+        Colors.splice(IndexToAdd, 0, ColorName)
+        document.write("<p> After adding color to desired position/index:", Colors.join(","), ".", "</p>")
+        var DeleteIndex = prompt("Enter the index from where u want to delete the color")
+        var DeleteColor = prompt("Enter the number of color u want to delete");
+        Colors.splice(DeleteIndex, DeleteColor)
+        document.write("<p>After deleting color(s) from desired position/index: ", Colors.join(","), ".", "</p>")
+
+        document.write("<h2> Qno 10 </h2>")
+        var ScoresStudents = [320, 230, 480, 120];
+        document.write("<p> Scores of student: ", ScoresStudents, "</p>")
+        ScoresStudents.sort()
+        document.write("<p> Scores of student in ascending order: ", ScoresStudents, "</p>")
+
+        document.write("<h2> Qno 11 </h2>")
+        var Cities = ["Tokyo", "Sydney", "Londan", "New york"];
+        document.write("<p> Cities List: ", Cities)
+        var selectedCities = [];
+
+        // Copy three elements from cities array to selectedCities array
+        selectedCities.push(Cities[0], Cities[1], Cities[2]);
+        document.write(" <p> Selected cities:", selectedCities, "</p>");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>
